@@ -1,12 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Desafio API</title>
-</head>
-<body>
-    <script src="./assets/js/script.js"></script>
-</body>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>APIs</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <h3 id="error"></h3>
+    <main class="main">
+      <h1>Conversor de Monedas Nacional</h1>
+      <hr />
+      <div class="box">
+        <h2>Pesos CLP</h2>
+        <input type="number" id="peso" value="" placeholder="Ingrese el monto en CLP"/>
+        <p>Moneda a convertir:</p>
+        <select name="" id="moneda">
+          <option value="sin seleccion">Selecciona una moneda</option>
+          <option value="dolar">Dolar</option>
+          <option value="euro">Euro</option>
+          <option value="bitcoin">Bitcoin</option>
+          <option value="uf">UF</option>
+        </select>
+        <button id="button" onclick="convertirValor()">Convertir</button>
+        <p id="resultado">...</p>
+      </div>
+
+      <h1>Gráfico</h1>
+      <hr />
+      <div class="grafica">
+        <canvas style="width: 35rem" id="myChart"></canvas>
+      </div>
+    </main>
+    <script src="./Assets/js/script.js"></script>
+  </body>
 </html>
